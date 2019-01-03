@@ -76,6 +76,12 @@ Therefore see the example azure deployment template `azure-resources/certbot-dep
 - Create a new file share with the name `certbot-azure`
 - Get the values for `storageAccountName` and `storageAccountKey` from the Portal website (_Account Keys_ section in the storage account configuration page) and update the `certbot-deployment.json` file accordingly.
 
+Deploy with
+
+```
+az group deployment create --resource-group AppGateway --template-file certbot.json
+```
+
 As the deployment template has the restart poliy 'Never' it will run only once and needs to be rerun any time you want to renew the certificate. This can be done either manually or using a scheduler. 
 
 
