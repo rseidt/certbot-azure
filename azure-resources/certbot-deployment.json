@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "containerGroupName": {
+      "type": "string",
+      "defaultValue": "certbotContainer",
+      "metadata": {
+        "description": "Certbot with scripts volume."
+      }
+    }
+  },
+  "variables": {
+    "container1name": "seidtorg-certbot",
+    "container1image": "robertseidt/certbot-azure"
+  },
+  "resources": [
+    {
+      "name": "[parameters('containerGroupName')]",
+      "type": "Microsoft.ContainerInstance/containerGroups",
+      "apiVersion": "2018-04-01",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "containers": [
+          {
+            "name": "[variables('container1name')]",
+            "properties": {
+              "image": "[variables('container1image')]",
+              "command" :[
+                "certbot",
+                "certonly",
+                "--manual",
+                "--manual-auth-hook",
+                "/var/scripts/set-dns-record.sh",
+                "--manual-cleanup-hook",
+                "/var/scripts/delete-dns-record.sh",
+                "--deploy-hook",
+                "/var/scripts/update-ssl-cert.sh",
+                "--disable-hook-validation",
+                "--preferred-challenges",
+                "dns-01",
+                "--agree-tos",
+                "-d",
+                "seidt.org",
+                "-d",
+                "*.seidt.org",
+                "-m",
+                "robert.seidt@gmail.com",
+                "--no-eff-email",
+                "--manual-public-ip-logging-ok",
+                "--renew-by-default"
+              ],
+              "resources": {
+                "requests": {
+                  "cpu": 1,
+                  "memoryInGB": 1
+                }
+              },
+              "volumeMounts": [ 
+                {
+                    "mountPath": "/var/scripts",
+                    "name": "scripts",
+                    "readOnly": true
+                }
+              ]
+            }
+          }
+        ],
+        "osType": "Linux",
+        "restartPolicy" : "Never",
+        "volumes": [
+          {
+            "name": "scripts",
+            "azureFile": {
+                "shareName": "azure-certbot",
+                "storageAccountName": "<storageAccountName>",
+                "storageAccountKey": "<storageAccountKey>"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 #!/bin/sh
-./az-login.sh
+/var/scripts/az-login.sh
 
 CERT_PASSWD="<Password of your choice>"
 AZURE_CERT_NAME="<Name of certificate in Azure Application Gateway>"

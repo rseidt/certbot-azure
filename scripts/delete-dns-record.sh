@@ -1,5 +1,5 @@
 #!/bin/sh
-./az-login.sh
+/var/scripts/az-login.sh
 
 AZURE_DNSZONE_RESOURCEGROUP="<Resource Group Name of your Azure DNS Zone resource>"
 AZURE_DNSZONE_RESOURCENAME="<Name of your Azure DNS Zone resource>"
