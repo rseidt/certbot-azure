@@ -72,7 +72,7 @@
           {
             "name": "scripts",
             "azureFile": {
-                "shareName": "azure-certbot",
+                "shareName": "certbot-azure",
                 "storageAccountName": "<storageAccountName>",
                 "storageAccountKey": "<storageAccountKey>"
             }

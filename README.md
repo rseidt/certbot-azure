@@ -61,3 +61,21 @@ The following Variables must be filled with your according values:
 | `AZURE_APP_GW_RESOURCE_GROUP_NAME` | Name of the Application Gateway Resource Group |
 
 Please understand that this is a pure UPDATE script it will not be able to initially DEPLOY the ssl certificate. For this a different deploy-hook script would be necessary.
+
+The script will keep running until the _long running operation_ is committed by azure. Sometimes this takes very long. Even if the actual task to update the pfx file is already completed, azure refuses to commit. consider using the `--no-wait` in the `az network application-gateway ssl-cert update`command.
+
+## Run it inside Azure Container instances
+
+The container can of course be used inside Azure Container instances.
+
+Therefore see the example azure deployment template `azure-resources/certbot-deployment.json`
+
+- Create a new Resouce Group, or use the one where your Application Gateway resides (which you want to update). In the example the Resource Group is named "AppGateway".
+
+- Create a storage account or use an exisiting one
+- Create a new file share with the name `certbot-azure`
+- Get the values for `storageAccountName` and `storageAccountKey` from the Portal website (_Account Keys_ section in the storage account configuration page) and update the `certbot-deployment.json` file accordingly.
+
+As the deployment template has the restart poliy 'Never' it will run only once and needs to be rerun any time you want to renew the certificate. This can be done either manually or using a scheduler. 
+
+
