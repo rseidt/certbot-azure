@@ -82,7 +82,7 @@ Deploy with
 az group deployment create --resource-group AppGateway --template-file certbot.json
 ```
 
-As the deployment template has the restart poliy 'Never' it will run only once and needs to be rerun any time you want to renew the certificate. This can be done either manually or using a scheduler. 
+As the deployment template has the restart policy 'Never' it will run only once and needs to be rerun any time you want to renew the certificate. This can be done either manually or using a scheduler. 
 
 # Bi Monthly Trigger to renew SSL certificates by starting the certbot ACI Container Group
 
