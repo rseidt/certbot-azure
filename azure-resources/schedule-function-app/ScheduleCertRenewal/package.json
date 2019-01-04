@@ -1,0 +1,10 @@
+{
+    "name": "schedule-cert-renewal",
+    "version": "0.0.1",
+    "description": "Timer triggererd function to renew ssl certificates",
+    "main": "index.js",
+    "author": "Robert Seidt",
+    "dependencies": {
+        "azure-arm-containerinstance": "5.4.0"
+    }
+}

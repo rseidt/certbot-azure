@@ -84,4 +84,36 @@ az group deployment create --resource-group AppGateway --template-file certbot.j
 
 As the deployment template has the restart poliy 'Never' it will run only once and needs to be rerun any time you want to renew the certificate. This can be done either manually or using a scheduler. 
 
+# Bi Monthly Trigger to renew SSL certificates by starting the certbot ACI Container Group
 
+The azure Function `ScheduleCertRenewal` (`azure-resources/schedule-function-app`) uses the REST encapsulation (azure-arm-containerinstance) to start the defined ContainerGroup once every two months.
+
+To edit and deploy use Visual Studio Code with the _Azure Functions_ extension installed. You will need to provide the following _Application Settings_:
+
+| Setting | Description |
+| --- | --- |
+| SP_KEY | Access key of the Service Principal |
+| SP_NAME | ClientId/Name of the Service Principal |
+| TENNANT_ID | The Tennant Id, acquired from the Azure Portal |
+| SUBSCRIPTION_ID | The Id od your Subscription |
+| ACI_RESOURCEGROUP | The Resource Group name in which the container group is located which executes the certbot |
+| ACI_CONTAINERGROUP | The name of the ACI Container Group |
+
+to debug the function implementation and trigger locally, just provide the settings in the `local.settings.json` file in the schedule-function-app directory:
+
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<Storage Account Connection String>",
+    "SP_KEY" : "<Service Principal Access Key>",
+    "SP_NAME" : "<Service Principal Cient ID>",
+    "TENNANT_ID" : "<Tennant ID>",
+    "SUBSCRIPTION_ID" : "<Subscription ID>",
+    "ACI_RESOURCEGROUP" : "<Resource Group Name>",
+    "ACI_CONTAINERGROUP" : "<Certbot ACI Gontainer Group Name>",
+    "FUNCTIONS_WORKER_RUNTIME": "node"
+  }
+}
+
+```
