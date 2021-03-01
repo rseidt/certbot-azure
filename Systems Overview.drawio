@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-01T09:54:52.835Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="u0Zg11utTkD43uvmtljo" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-01T10:15:21.313Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="Dtxe95c1N3sfkl1bkw-S" version="14.4.3" type="github">
   <diagram name="Page-1" id="bfe91b75-5d2c-26a0-9c1d-138518896778">
     <mxGraphModel dx="2282" dy="1525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -113,7 +113,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zYysgDhRsV4P9b-H903_-125" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" parent="1" vertex="1">
-          <mxGeometry x="-398.71000000000004" y="-180" width="63" height="70" as="geometry" />
+          <mxGeometry x="-398.71000000000004" y="-100" width="63" height="70" as="geometry" />
         </mxCell>
         <mxCell id="hzs8G2BnuAS4f3jiqhve-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="zYysgDhRsV4P9b-H903_-126" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -121,16 +121,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zYysgDhRsV4P9b-H903_-126" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.smartphone;" parent="1" vertex="1">
-          <mxGeometry x="-316" y="-170" width="36" height="50" as="geometry" />
+          <mxGeometry x="-316" y="-90" width="36" height="50" as="geometry" />
         </mxCell>
         <mxCell id="zYysgDhRsV4P9b-H903_-130" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-610" y="150" as="sourcePoint" />
             <mxPoint x="-610" y="150" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="zYysgDhRsV4P9b-H903_-133" value="Innospace - System architecture Overview" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=23;fontStyle=5" parent="1" vertex="1">
-          <mxGeometry x="-665" y="-230" width="480" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5VQCpyMXvFSsDKne97cI-4" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.virtual_server;" parent="1" vertex="1">
           <mxGeometry x="330" y="536.25" width="55" height="61" as="geometry" />
