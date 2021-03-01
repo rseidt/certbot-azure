@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-01T15:29:23.678Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="4aEuILzu51JpletxktNO" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-01T16:31:00.712Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="px4dP2GFJ0C0nJsVcQiB" version="14.4.3" type="github">
   <diagram name="Page-1" id="bfe91b75-5d2c-26a0-9c1d-138518896778">
     <mxGraphModel dx="2491" dy="1644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
         <mxCell id="7c3789c024ecab99-78" value="Innospace Services" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;comic=0;strokeColor=#036897;strokeWidth=2;fillColor=none;fontFamily=Verdana;fontSize=28;fontColor=#6881B3;align=center;arcSize=11;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-610" y="120" width="680" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="7c3789c024ecab99-79" value="Backend Services in the Cloud" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;comic=0;strokeColor=#036897;strokeWidth=2;fillColor=none;fontFamily=Verdana;fontSize=28;fontColor=#6881B3;align=center;arcSize=11;verticalAlign=top;" parent="1" vertex="1">
+        <mxCell id="7c3789c024ecab99-79" value="Backend Services (Cloud)" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;comic=0;strokeColor=#036897;strokeWidth=2;fillColor=none;fontFamily=Verdana;fontSize=28;fontColor=#6881B3;align=center;arcSize=11;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="-1060" y="440" width="680" height="320" as="geometry" />
         </mxCell>
         <mxCell id="zYysgDhRsV4P9b-H903_-13" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Kubernetes.svg;" parent="1" vertex="1">
@@ -79,7 +79,7 @@
           <mxGeometry x="-589.71" y="606" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="zYysgDhRsV4P9b-H903_-93" value="&lt;b&gt;Public, i.e. https://innospace.vde.com&lt;br&gt;&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-617.35" y="-10" width="230" height="20" as="geometry" />
+          <mxGeometry x="-617.35" width="230" height="20" as="geometry" />
         </mxCell>
         <mxCell id="zYysgDhRsV4P9b-H903_-97" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.virtual_server;" parent="1" vertex="1">
           <mxGeometry x="-7.500000000000057" y="539" width="55" height="61" as="geometry" />
@@ -154,8 +154,8 @@
         <mxCell id="wJw1AYEUA0vpzyY4eTX8-10" value="Frontend: t.b.d." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;comic=0;strokeColor=#036897;strokeWidth=2;fillColor=none;fontFamily=Verdana;fontSize=28;fontColor=#6881B3;align=center;arcSize=41;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="-970" y="20" width="1037.21" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="wJw1AYEUA0vpzyY4eTX8-11" value="Coremedia? MyVoith? Something New?" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#FF0000;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-195" y="40" width="240" height="20" as="geometry" />
+        <mxCell id="wJw1AYEUA0vpzyY4eTX8-11" value="Frontent tech stack: Coremedia? MyVoith? Something New?&lt;br&gt;Tasks:&lt;br&gt;&lt;ul&gt;&lt;li&gt;Define Pages/Areas where content is placed&lt;/li&gt;&lt;li&gt;Define User environment (classification) to allow content personalization for non-logged in users&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#FF0000;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-398.61" y="-60" width="610" height="90" as="geometry" />
         </mxCell>
         <mxCell id="wJw1AYEUA0vpzyY4eTX8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeWidth=2;fontSize=12;fontColor=#FF0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zYysgDhRsV4P9b-H903_-125" target="zYysgDhRsV4P9b-H903_-93">
           <mxGeometry relative="1" as="geometry">
